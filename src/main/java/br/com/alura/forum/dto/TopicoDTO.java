@@ -1,6 +1,7 @@
 package br.com.alura.forum.dto;
 
 import br.com.alura.forum.modelos.Topico;
+
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;

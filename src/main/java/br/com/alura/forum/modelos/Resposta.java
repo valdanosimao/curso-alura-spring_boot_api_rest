@@ -19,14 +19,6 @@ public class Resposta {
 	private Usuario autor;
 	private Boolean solucao = false;
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		return result;
-	}
-
 	public Long getId() {
 		return id;
 	}
@@ -73,6 +65,14 @@ public class Resposta {
 
 	public void setSolucao(Boolean solucao) {
 		this.solucao = solucao;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
 	}
 
 	@Override
